@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="解绑设备"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        app:elevation="6dp" />
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/send_dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/send_time"
+        android:text="发送DP"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        app:rippleColor="#ffffff" />
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/send_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="发送DP(带时间戳)"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff"
+        app:rippleColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/console"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reset"
+        android:layout_alignParentStart="true"
+        android:alpha="0.6"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="接收日志在这里输出(长按清除): \n" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/send_dp"
+        android:id="@+id/dp_list"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/qrcode"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp" />
+
+</RelativeLayout>
