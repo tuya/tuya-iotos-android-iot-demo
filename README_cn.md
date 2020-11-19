@@ -2,6 +2,8 @@
 
 # tuya-iotos-android-iot-demo
 
+涂鸦安卓IoT SDK demo。
+
 ## 介绍
 本仓库里包含了涂鸦IoT自联网SDK的演示程序。  
 涂鸦IoT自联网SDK是基于 Tuya Device OS 技术体系按照自联网设备应用场景，进行裁剪、定制得到的，适用于任意一款按照涂鸦平台导入规范进行适配导入的安卓平台（支持安卓API 19及以上）。
@@ -258,5 +260,11 @@ ioTSDKManager.setUpgradeCallback(new UpgradeEventCallback() {
         });
 ```
 
+## 如何获得技术支持
+You can get support from Tuya with the following methods:
 
+Tuya Smart Help Center: https://support.tuya.com/en/help
+Technical Support Council: https://iot.tuya.com/council/ 
 
+## 使用的开源License
+This Tuya Android Device IoT SDK Sample is licensed under the MIT License.
