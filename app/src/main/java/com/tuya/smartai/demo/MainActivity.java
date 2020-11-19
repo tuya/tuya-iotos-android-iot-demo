@@ -195,6 +195,7 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
             @Override
             protected boolean isOffline() {
                 //实现自定义网络监测
+                Log.d(TAG, "isOffline: " + super.isOffline());
                 return super.isOffline();
             }
         };
@@ -309,6 +310,11 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
                                 }
                                 break;
                         }
+                    }
+
+                    @Override
+                    public void onMqttMsg(int protocol, org.json.JSONObject msgObj) {
+
                     }
                 });
 
