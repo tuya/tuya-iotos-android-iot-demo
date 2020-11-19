@@ -263,7 +263,7 @@ ioTSDKManager.setUpgradeCallback(new UpgradeEventCallback() {
 ## 如何获得技术支持
 You can get support from Tuya with the following methods:
 
-Tuya Smart Help Center: https://support.tuya.com/en/help
+Tuya Smart Help Center: https://support.tuya.com/en/help  
 Technical Support Council: https://iot.tuya.com/council/ 
 
 ## 使用的开源License
