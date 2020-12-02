@@ -126,7 +126,7 @@ public interface IoTCallback {
         void onFirstActive();
 	
 	/**
-         * mqtt消息回调
+         * 接收MQTT消息
          * @param protocol 协议号
          * @param msgObj 消息
          */
@@ -219,6 +219,21 @@ IoTSDKManager.sendDPWithTimeStamp(DPEvent... events)
      */
 IoTSDKManager.httpRequest(String apiName, String apiVersion, String jsonMsg)
 
+/**
+     * 注册MQTT消息, 初始化SDK后调用
+     *
+     * @param protocol 需要注册的协议号
+     * @return success: 0;fail: !0
+     */
+int registMqtt(int protocol)
+
+/**
+     * 发送MQTT消息
+     * @param protocol 协议号
+     * @param msg 消息
+     * @return success: 0;fail: !0
+     */
+int sendMqtt(int protocol, String msg) 
 
 //获取设备id
 IoTSDKManager.getDeviceId()
