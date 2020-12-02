@@ -124,6 +124,13 @@ public interface IoTCallback {
         
         //设备初次激活
         void onFirstActive();
+	
+	/**
+         * mqtt消息回调
+         * @param protocol 协议号
+         * @param msgObj 消息
+         */
+	void onMqttMsg(int protocol, org.json.JSONObject msgObj)
         
     }
 
