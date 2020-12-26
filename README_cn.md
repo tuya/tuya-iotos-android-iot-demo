@@ -246,7 +246,7 @@ int IoTSDKManager.getUniTime()
  * @param token
  * @return success: 0;fail: !0
  */
-int userTokenBind(String token)
+int IoTSDKManager.userTokenBind(String token)
 
 //自定义实现网络状态监测，返回值为网络是否离线。SDK已提供默认实现，如无需要不必扩展此方法。
 ioTSDKManager = new IoTSDKManager(this) {
