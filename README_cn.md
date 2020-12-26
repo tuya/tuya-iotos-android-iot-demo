@@ -238,6 +238,16 @@ int sendMqtt(int protocol, String msg)
 //获取设备id
 IoTSDKManager.getDeviceId()
 
+//获取服务器时间
+int IoTSDKManager.getUniTime()
+
+/**
+ * 直接传入token激活设备
+ * @param token
+ * @return success: 0;fail: !0
+ */
+int userTokenBind(String token)
+
 //自定义实现网络状态监测，返回值为网络是否离线。SDK已提供默认实现，如无需要不必扩展此方法。
 ioTSDKManager = new IoTSDKManager(this) {
 
