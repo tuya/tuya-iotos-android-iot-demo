@@ -312,10 +312,10 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
                         }
                     }
 
-                    @Override
-                    public void onMqttMsg(int protocol, org.json.JSONObject msgObj) {
-
-                    }
+//                    @Override
+//                    public void onMqttMsg(int protocol, org.json.JSONObject msgObj) {
+//
+//                    }
                 });
 
         ioTSDKManager.setUpgradeCallback(new UpgradeEventCallback() {
